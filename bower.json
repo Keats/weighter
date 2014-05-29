@@ -1,5 +1,5 @@
 {
-  "name": "ngBoilerplate",
+  "name": "weighter",
   "version": "0.0.0",
   "devDependencies": {
     "angular": "1.2.16",

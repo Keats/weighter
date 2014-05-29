@@ -3,12 +3,12 @@
 var modules = [
   "templates",
 
-  "ngBoilerplate.home",
+  "weighter.home",
 
   "ui.router.state"
 ];
 
-var appModule = angular.module("ngBoilerplate", modules);
+var appModule = angular.module("weighter", modules);
 
 var appConfig = function ($urlRouterProvider: ng.ui.IUrlRouterProvider) {
   $urlRouterProvider.otherwise("/home");

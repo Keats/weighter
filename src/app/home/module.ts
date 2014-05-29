@@ -6,7 +6,7 @@ var modules = [
   "ui.router.state"
 ];
 
-var home = angular.module("ngBoilerplate.home", modules);
+var home = angular.module("weighter.home", modules);
 
 var homeConfig = function ($stateProvider: ng.ui.IStateProvider) {
   $stateProvider.state("home", {
