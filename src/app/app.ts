@@ -5,7 +5,8 @@ var modules = [
 
   "weighter.home",
 
-  "ui.router.state"
+  "ui.router.state",
+  "n3-line-chart"
 ];
 
 var appModule = angular.module("weighter", modules);

@@ -34,13 +34,17 @@ var vendor = {
         'vendor/angular/angular.js',
         'vendor/angular-ui-router/release/angular-ui-router.js',
         'vendor/lodash/dist/lodash.js',
-        'vendor/restangular/dist/restangular.js',
+        'vendor/d3/d3.js',
+        'vendor/n3-line-chart/dist/line-chart.js',
+        'vendor/moment/moment.js',
     ],
     dist: [
         'vendor/angular/angular.min.js',
         'vendor/angular-ui-router/release/angular-ui-router.min.js',
         'vendor/lodash/dist/lodash.min.js',
-        'vendor/restangular/dist/restangular.min.js',
+        'vendor/d3/d3.min.js',
+        'vendor/n3-line-chart/dist/line-chart.min.js',
+        'vendor/moment/min/moment.min.js',
     ]
 };
 
@@ -48,7 +52,9 @@ var injectPaths = [
     "" + destinations.libs + "/angular." + (isDist ? 'min.' : '') + "js",
     "" + destinations.libs + "/angular-ui-router." + (isDist ? 'min.' : '') + "js",
     "" + destinations.libs + "/lodash." + (isDist ? 'min.' : '') + "js",
-    "" + destinations.libs + "/restangular." + (isDist ? 'min.' : '') + "js",
+    "" + destinations.libs + "/d3." + (isDist ? 'min.' : '') + "js",
+    "" + destinations.libs + "/line-chart." + (isDist ? 'min.' : '') + "js",
+    "" + destinations.libs + "/moment." + (isDist ? 'min.' : '') + "js",
     "" + destinations.js + "/app/**/*.js",
     "" + destinations.js + "/templates.js",
     "" + destinations.css + "/*.css"

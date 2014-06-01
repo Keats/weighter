@@ -1,1 +1,27 @@
-<p>World!</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Weight</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr ng-repeat="point in vm.points track by point.date">
+      <td>{{ point.date | date:'yyyy/MM/dd' }}</td>
+      <td>{{ point.weight }}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<form name="addPointForm">
+  <input required type="number" placeholder="Enter today's weight" ng-model="vm.weight"/>
+  <input type="submit" ng-click="vm.addPoint(vm.weight)" ng-disabled="addPointForm.$invalid" value="Add!">
+</form>
+
+
+<div class="chart-container">
+  <linechart data="vm.points" options="vm.options" mode=""></linechart>
+</div>
